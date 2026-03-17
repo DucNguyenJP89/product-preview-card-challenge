@@ -27,10 +27,10 @@
     <main>
       <article>
         <figure class="item-img">
-          <img
-            src="./images/image-product-mobile.jpg"
-            alt="A perfume from Chanel"
-          />
+          <picture>
+            <source media="(min-width: 48rem)" srcset="./images/image-product-desktop.jpg">
+            <img src="./images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum bottle">
+          </picture>
         </figure>
         <section class="item-content">
           <header>
@@ -40,9 +40,11 @@
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.</p>
           </header>
-          <div class="item-price">
-            $149.99
-            <span>$169.99</span>
+          <div class="item-price" aria-label="current price $149.99, was $169.99">
+              $149.99
+            <del>
+              $169.99
+            </del>
           </div>
           <button><img src="./images/icon-cart.svg" alt="add to cart" />Add to Cart</button>
         </section>
@@ -50,9 +52,9 @@
 
       <footer class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Duc Nguyen</a>.
+        >. Coded by <a href="https://github.com/DucNguyenJP89/" target="_blank" rel="noopener noreferrer">Duc Nguyen</a>.
       </footer>
     </main>
   </body>

@@ -10,7 +10,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", san-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -29,7 +29,9 @@ article {
 
 article .item-img img {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 article .item-content {
@@ -74,11 +76,10 @@ article .item-content header {
   gap: 1rem;
 }
 
-.item-content .item-price span {
+.item-content .item-price del {
   font-size: 0.8125rem;
   line-height: 1.2;
   color: var(--neutral-grey);
-  text-decoration: line-through;
   font-weight: 500;
 }
 
@@ -103,10 +104,40 @@ article .item-content header {
   height: 1.125rem;
 }
 
+.item-content button:hover {
+  background-color: var(--primary-green-700);
+  cursor: pointer;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 48rem) {
+  main {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  article {
+    width: 37.5rem;
+    display: flex;
+    margin: 0;
+  }
+
+  article .item-img {
+    width: 55%;
+  }
+
+  article .item-content {
+    width: 45%;
+  }
 }
