@@ -110,7 +110,8 @@ article .item-content header {
 }
 
 .attribution {
-  font-size: 11px;
+  width: 90%;
+  font-size: 0.625rem;
   text-align: center;
 }
 .attribution a {
